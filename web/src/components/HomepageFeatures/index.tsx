@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
         Bla bla bla.
       </>
     ),
-    link: '/docs/architecture/',
+    link: '/docs/category/architecture/',
   },
   {
     title: 'Architecture',
@@ -30,7 +30,7 @@ const FeatureList: FeatureItem[] = [
         Bla bla bla.
       </>
     ),
-    link: '/docs/principles/',
+    link: '/docs/category/principles/',
   },
   {
     title: 'User Guide',
@@ -40,7 +40,7 @@ const FeatureList: FeatureItem[] = [
         Bla bla bla.
       </>
     ),
-    link: '/docs/user-guide/',
+    link: '/docs/category/user-guide/',
   },
 ];
 
