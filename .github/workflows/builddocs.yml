@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: web
-        run: yarn install --frozen-lockfile
+        run: yarn install
       - name: Build website
         working-directory: web
         run: yarn build
