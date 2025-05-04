@@ -1,0 +1,53 @@
+name: DS cross build tag
+on:
+  push:
+    tags:
+      - v*
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        platform:
+          - 'linux/amd64'
+          - 'windows/amd64'
+          - 'darwin/amd64'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.24.2'
+
+      - name: Get current tag
+        run: echo "TAG=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
+
+      - name: Get OS and arch info
+        run: |
+          PLATFORM=${{matrix.platform}}
+          OS=${PLATFORM%/*}
+          ARCH=${PLATFORM#*/}
+          BINARY_NAME=${{github.repository}}-$OS-$ARCH-$TAG
+          echo "BINARY_NAME=$BINARY_NAME" >> $GITHUB_ENV
+          echo "GOOS=$OS" >> $GITHUB_ENV
+          echo "GOARCH=$ARCH" >> $GITHUB_ENV
+
+      - name: Build
+        working-directory: ds
+        run: |
+          go build -v -o "../$BINARY_NAME"
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: true
+          files: ${{env.BINARY_NAME}}

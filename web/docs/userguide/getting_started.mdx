@@ -1,0 +1,39 @@
+---
+sidebar_position: 1
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# Getting started
+
+## Installation
+
+Download the `ds` binary from the GitHub releases. Unpack it and move it to your binary folder.
+
+<Tabs>
+    <TabItem value="windows" label="Windows" default>
+        ...
+    </TabItem>
+    <TabItem value="linux" label="Linux">
+        ...
+    </TabItem>
+    <TabItem value="mac" label="Mac">
+        ...
+    </TabItem>
+</Tabs>
+
+## Configuration
+
+When running `ds` for the first time it will prompt you for some input and create a configuration profile.
+
+```bash
+ds
+
+> Whats your name?
+> Whats your GitHub username?
+> Thats it, now run 'ds auth' to authenticate with dsenv
+```
+
+After that you will need to run `ds auth`. This will open a browser window where you need to login with your DS account.
