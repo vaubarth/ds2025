@@ -3,12 +3,12 @@ sidebar_position: 4
 ---
 # Services
 
-A services represents a single application, like a webapp. It is always associated with a customer.
+A service represents a single application, like a webapp. It is always associated with a customer.
 
 Each service has its own:
 - k8s and kustomize manifests
 - dashboards in our Grafana instance
-- managed database if needed (mongodb or postgres)
+- managed database if needed (MongoDB or PostgresSQL)
 - CI/CD pipelines
 - GitHub repository
 - Space in our developer portal
@@ -24,10 +24,10 @@ ds services
 | ID | SERVICE   | CUSTOMER   | REPOSITORY             |
 +----+-----------+------------+------------------------+
 |  1 | Service A | Customer A | github.com/some/repo_a |
-|  1 | Service B | Customer A | github.com/some/repo_b |
-|  1 | Service C | Customer A | github.com/some/repo_c |
-|  1 | Service Y | Customer B | github.com/some/repo_d |
-|  1 | Service Z | Customer C | github.com/some/repo_e |
+|  2 | Service B | Customer A | github.com/some/repo_b |
+|  3 | Service C | Customer A | github.com/some/repo_c |
+|  4 | Service Y | Customer B | github.com/some/repo_d |
+|  5 | Service Z | Customer C | github.com/some/repo_e |
 +----+-----------+------------+------------------------+
 ```
 
@@ -72,4 +72,4 @@ There are a handful of flags that can be added to customize how a service is cre
 - `--database` The type of database that should be added. Can be specified multiple times.
 - `--stack` The tech and language stack for the service. Initiates different defaults for CI/CD
 - `--dns` If a dns entry is required the domain name.
-- `--replics` Number of replicas if defaults are not sufficient.
+- `--replicas` Number of replicas if defaults are not sufficient.

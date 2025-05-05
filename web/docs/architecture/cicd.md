@@ -20,9 +20,9 @@ This way we ensure that the actual workflows are simple and don’t contain unne
 
 ## CD
 For deployment we use [ArgoCD](https://argo-cd.readthedocs.io). 
-Argo makes sure that we can easily automate the rollout to different clusters while maintaining versions in code.
+Argo makes sure that we can easily automate the rollout to different clusters while still maintaining versions in code.
 
-All services have have automatic sync enabled, therefore updates in the manifests are automatically applied and the CD pipelines stay small.
+All services have automatic sync enabled, therefore updates in the manifests are automatically applied and the CD pipelines stay small.
 
 In a typical deployment workflow we create a new git tag and build a corresponding docker image.
 We then update a kustomization file declaring the new image tag to be used in the deployment. Argo will sync this change across the relevant clusters and therefore update the service.

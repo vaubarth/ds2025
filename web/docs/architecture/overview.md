@@ -4,9 +4,9 @@ sidebar_position: 0
 # Overview
 
 `dsenv` is the overall system designed to self-host and run your applications.
-It consists of several connected services as well as a cli tool called `ds`.
+It consists of several connected services as well as a CLI tool called `ds`.
 
-`dsenv` is built on [kubernetes](/docs/architecture/k8s) and uses namespaces to provide separation and isolation between customers.
+`dsenv` is built on [Kubernetes](/docs/architecture/k8s) and uses namespaces to provide separation and isolation between customers.
 There are three additional namespaces configured that hold services for [observability](/docs/architecture/o11y), [CI/CD via ArgoCD](/docs/architecture/cicd) and internal services.
 
 Users interact primarily via our dedicated CLI `ds` with their services as well as our internal ones.

@@ -18,10 +18,10 @@ ds customers
 | ID | CUSTOMER   |
 +----+------------+
 |  1 | Customer A |
-|  1 | Customer B |
-|  1 | Customer C |
-|  1 | Customer D |
-|  1 | Customer E |
+|  2 | Customer B |
+|  3 | Customer C |
+|  4 | Customer D |
+|  5 | Customer E |
 +----+------------+
 ```
 
@@ -31,9 +31,9 @@ Creating a new customer will set up everything that is needed to later add servi
 
 It will create all required namespaces and add the customer to the list of known customers.
 ```bash
-ds customers new CustomnerName
+ds customers new CustomerName
 
-> Adding new customer CustomnerName
+> Adding new customer CustomerName
 Creating customer data ... done! [100 in 1.003s]
 Registering namespaces ... done! [100 in 1.003s]
 ```
