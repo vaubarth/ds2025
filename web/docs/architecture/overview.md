@@ -12,7 +12,7 @@ There are three additional namespaces configured that hold services for [observa
 Users interact primarily via our dedicated CLI `ds` with their services as well as our internal ones.
 Outside of k8s we are running [managed database services](/docs/architecture/databases), currently for PostgreSQL and MongoDB, as well as databases for observability.
 
-The internal services are the [developer portal](/docs/architecture/portal) and a service called [Blueprinter](/docs/architecture/blueprinter). The developer portal integrates with [GitHub](/docs/architecture/repo) which is also our source of truth for all configurations.
+The internal services are the [developer portal](/docs/architecture/portal) and a service called [Blueprinter](/docs/architecture/blueprinter). The developer portal integrates with [GitHub](/docs/architecture/cicd) which is also our source of truth for all configurations.
 
 ```mermaid
 ---

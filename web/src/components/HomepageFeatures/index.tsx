@@ -17,7 +17,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/principles.svg').default,
     description: (
       <>
-        Bla bla bla.
+          The principles we adhere to when developing dsenv.
       </>
     ),
     link: '/docs/category/architecture/',
@@ -27,7 +27,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/architecture.svg').default,
     description: (
       <>
-        Bla bla bla.
+          Understand the architecture of dsenv.
       </>
     ),
     link: '/docs/category/principles/',
@@ -37,7 +37,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/guide.svg').default,
     description: (
       <>
-        Bla bla bla.
+          How to interact with dsenv via the cli.
       </>
     ),
     link: '/docs/category/user-guide/',

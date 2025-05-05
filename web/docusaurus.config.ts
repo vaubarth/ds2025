@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'dsenv',
-  tagline: 'Making the work of developers faster, easier and more enjoyable',
+  tagline: 'The hosting environment that makes developers happy.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -84,7 +84,7 @@ const config: Config = {
       links: [
 
       ],
-      copyright: `DS 2025`,
+      copyright: `DS 2025 by Vincent Barth`,
     },
     prism: {
       theme: prismThemes.github,
