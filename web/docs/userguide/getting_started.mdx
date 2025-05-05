@@ -13,15 +13,27 @@ import TabItem from '@theme/TabItem';
 Download the `ds` binary from the GitHub releases. Unpack it and move it to your binary folder.
 
 <Tabs>
-    <TabItem value="windows" label="Windows" default>
-        ...
+    <TabItem value="mac" label="Mac" default>
+        ```bash
+        curl https://github.com/vaubarth/ds2025/releases/download/v1/ds2025-darwin-amd64-v1 -o ds
+
+        chmod +x ds
+        ```
     </TabItem>
     <TabItem value="linux" label="Linux">
-        ...
+        ```bash
+        curl https://github.com/vaubarth/ds2025/releases/download/v1/ds2025-linux-amd64-v1 -o ds
+
+        chmod +x ds
+        ```
     </TabItem>
-    <TabItem value="mac" label="Mac">
-        ...
+    <TabItem value="windows" label="Windows">
+        ```bash
+        iwr -outf ds https://github.com/vaubarth/ds2025/releases/download/v1/ds2025-windows-amd64-v1
+        ```
     </TabItem>
+
+
 </Tabs>
 
 ## Configuration
