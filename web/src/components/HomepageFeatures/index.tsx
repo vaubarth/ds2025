@@ -20,7 +20,7 @@ const FeatureList: FeatureItem[] = [
           The principles we adhere to when developing dsenv.
       </>
     ),
-    link: '/docs/category/architecture/',
+    link: '/docs/category/principles/',
   },
   {
     title: 'Architecture',
@@ -30,7 +30,7 @@ const FeatureList: FeatureItem[] = [
           Understand the architecture of dsenv.
       </>
     ),
-    link: '/docs/category/principles/',
+    link: '/docs/category/architecture/',
   },
   {
     title: 'User Guide',
