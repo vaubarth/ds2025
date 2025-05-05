@@ -25,4 +25,4 @@ Argo makes sure that we can easily automate the rollout to different clusters wh
 All services have have automatic sync enabled, therefore updates in the manifests are automatically applied and the CD pipelines stay small.
 
 In a typical deployment workflow we create a new git tag and build a corresponding docker image.
-We then update a kustomization file declaring the image new tag to be used in the deployment. Argo will sync this change across the relevant clusters and therefore update the service.
+We then update a kustomization file declaring the new image tag to be used in the deployment. Argo will sync this change across the relevant clusters and therefore update the service.
